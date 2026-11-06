@@ -4,28 +4,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SKYVANTA | Drone Technology</title>
+
+<title>SKYVANTA | Drone Technology & Aerial Delivery</title>
 
 <style>
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: Arial, sans-serif;
   background: #0b1120;
   color: #f1f5f9;
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 header {
-  padding: 25px 8%;
+  padding: 22px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #0b1120;
   border-bottom: 1px solid #263247;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .logo {
@@ -34,81 +40,129 @@ header {
   letter-spacing: 3px;
 }
 
+nav {
+  display: flex;
+  gap: 25px;
+}
+
 nav a {
   color: #cbd5e1;
   text-decoration: none;
-  margin-left: 22px;
   font-size: 14px;
+}
+
+nav a:hover {
+  color: #38bdf8;
 }
 
 .hero {
   text-align: center;
-  padding: 110px 20px;
-  background: linear-gradient(145deg, #101e35, #0b1120);
+  padding: 120px 20px;
+  background: linear-gradient(145deg, #14243d, #0b1120);
 }
 
 .tag {
   color: #38bdf8;
   letter-spacing: 3px;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .hero h1 {
-  font-size: 58px;
-  margin: 20px 0;
-  letter-spacing: 5px;
+  font-size: 65px;
+  margin: 25px 0;
+  letter-spacing: 6px;
 }
 
 .hero p {
-  max-width: 650px;
+  max-width: 700px;
   margin: auto;
   color: #cbd5e1;
+  font-size: 19px;
 }
 
 section {
-  padding: 75px 10%;
+  padding: 85px 10%;
+  scroll-margin-top: 85px;
 }
 
-h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
+section h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
 }
 
 .content {
-  max-width: 850px;
+  max-width: 900px;
   color: #cbd5e1;
+  font-size: 17px;
 }
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
   margin-top: 30px;
 }
 
 .card {
   background: #142137;
-  padding: 25px;
+  padding: 28px;
   border-radius: 12px;
   border: 1px solid #263b57;
 }
 
 .card h3 {
-  margin-bottom: 12px;
   color: #38bdf8;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #cbd5e1;
+}
+
+.member {
+  background: #142137;
+  border: 1px solid #263b57;
+  padding: 28px;
+  border-radius: 12px;
+}
+
+.member h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.member p {
+  color: #38bdf8;
+  font-size: 14px;
 }
 
 footer {
   text-align: center;
-  padding: 35px 15px;
+  padding: 40px 15px;
   border-top: 1px solid #263247;
   color: #94a3b8;
-  font-size: 13px;
 }
 
-@media(max-width:600px) {
-  .hero h1 { font-size: 38px; }
-  nav a { margin-left: 8px; font-size: 12px; }
+@media(max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  section {
+    padding: 60px 7%;
+  }
 }
 </style>
 </head>
@@ -117,6 +171,7 @@ footer {
 
 <header>
   <div class="logo">SKYVANTA</div>
+
   <nav>
     <a href="#about">About</a>
     <a href="#vision">Vision</a>
@@ -127,74 +182,136 @@ footer {
 
 <div class="hero">
   <div class="tag">A PROJECT BY SYDEX</div>
+
   <h1>SKYVANTA</h1>
+
   <p>
-    Exploring the future of drone technology and
-    aerial delivery solutions for groceries and
-    everyday essentials.
+    Exploring the future of drone technology
+    and aerial delivery solutions for groceries
+    and everyday essentials.
   </p>
 </div>
 
+<!-- ABOUT SECTION -->
 <section id="about">
-  <h2>About the Project</h2>
+  <h2>About SKYVANTA</h2>
+
   <div class="content">
-    SKYVANTA is a drone technology venture being
-    developed under SYDEX – Student Entrepreneurship
-    Network.
+    <p>
+      SKYVANTA is a drone technology venture
+      being developed under SYDEX –
+      Student Entrepreneurship Network.
+    </p>
 
     <p>
       Our project explores innovative drone-based
       delivery solutions designed to transform
-      last-mile transportation of groceries and
-      everyday essentials.
+      last-mile transportation of groceries
+      and everyday essentials.
     </p>
   </div>
 </section>
 
+<!-- VISION SECTION -->
 <section id="vision">
   <h2>Our Vision</h2>
+
   <div class="content">
-    To contribute to the future of intelligent aerial
-    transportation through innovative, reliable and
-    accessible drone technology.
+    <p>
+      To contribute to the future of intelligent
+      aerial transportation through innovative,
+      reliable and accessible drone technology.
+    </p>
+
+    <p>
+      We envision a future where aerial delivery
+      can create new possibilities for everyday
+      transportation and logistics.
+    </p>
   </div>
 </section>
 
+<!-- CONCEPT SECTION -->
 <section id="concept">
   <h2>Our Concept</h2>
+
+  <div class="content">
+    <p>
+      SKYVANTA is exploring drone-powered
+      delivery of groceries and everyday essentials,
+      with an initial focus on gated communities.
+    </p>
+  </div>
+
   <div class="cards">
+
     <div class="card">
       <h3>Aerial Delivery</h3>
-      <p>Exploring drone-based delivery of groceries
-      and everyday essentials.</p>
+      <p>
+        Exploring drone-based delivery
+        for daily necessities.
+      </p>
     </div>
 
     <div class="card">
       <h3>Smart Technology</h3>
-      <p>Exploring smartphone-based control and
-      intelligent drone systems.</p>
+      <p>
+        Exploring innovative control systems
+        and intelligent drone technology.
+      </p>
     </div>
 
     <div class="card">
       <h3>Future Logistics</h3>
-      <p>Investigating new possibilities for
-      efficient last-mile delivery.</p>
+      <p>
+        Investigating new possibilities
+        for last-mile delivery.
+      </p>
     </div>
+
   </div>
 </section>
 
+<!-- TEAM SECTION -->
 <section id="team">
-  <h2>Our Initiative</h2>
+  <h2>Our Team</h2>
+
   <div class="content">
-    SKYVANTA is being developed as a project under
-    SYDEX, a student entrepreneurship network
-    encouraging innovation, entrepreneurship and
-    practical problem-solving.
+    <p>
+      Meet the people working on the SKYVANTA
+      drone technology initiative under SYDEX.
+    </p>
+  </div>
+
+  <div class="cards">
+
+    <div class="member">
+      <h3>Siddharth Debnath</h3>
+      <p>Founder & Project Lead</p>
+      <p>Software Development</p>
+    </div>
+
+    <div class="member">
+      <h3>Rishi Srivastava</h3>
+      <p>Researcher</p>
+    </div>
+
+    <div class="member">
+      <h3>Sanjay Nellapati</h3>
+      <p>Researcher</p>
+    </div>
+
+    <div class="member">
+      <h3>Kaushik</h3>
+      <p>Researcher</p>
+    </div>
+
   </div>
 </section>
 
 <footer>
-  <p><strong>SKYVANTA</strong> | Drone Technology & Aerial Delivery</p>
+  <h3>SKYVANTA</h3>
+  <p>Drone Technology & Aerial Delivery</p>
   <p>A project by SYDEX – Student Entrepreneurship Network</p>
   <p>Building possibilities in the skies.</p>
 </footer>
