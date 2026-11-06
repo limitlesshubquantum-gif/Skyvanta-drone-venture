@@ -10,7 +10,7 @@ This document introduces the individuals involved in the SKYVANTA drone technolo
 
 ### 1. Siddharth Debnath
 **Role:** Founder & Project Lead  
-**Responsibilities:** Project leadership and software Developer
+**Responsibilities:** Project leadership and Software Developer
 
 ### 2. Rishi Srivastava
 **Role:** Researcher and Software Developer
